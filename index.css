@@ -1078,5 +1078,26 @@ footer{ margin-top: 30px; }
 .sermon-play-inline {
   display: none !important;
 }
+/* EVENTS: remove the ugly white scrollbar track */
+.events-track{
+  scrollbar-color: rgba(255,255,255,.18) transparent; /* Firefox */
+  scrollbar-width: thin; /* Firefox */
+}
+
+.events-track::-webkit-scrollbar{
+  height: 6px;
+}
+
+.events-track::-webkit-scrollbar-track{
+  background: transparent;   /* this is the “white block” */
+}
+
+.events-track::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255,.18);
+  border-radius: 999px;
+}
+.events-track{ scrollbar-width: none; }
+.events-track::-webkit-scrollbar{ display:none; }
+
 
   </style>
