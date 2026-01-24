@@ -1098,6 +1098,21 @@ footer{ margin-top: 30px; }
 }
 .events-track{ scrollbar-width: none; }
 .events-track::-webkit-scrollbar{ display:none; }
+/* KILL the white block in Events header (Webflow-style override) */
+.events .section-title > div{
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Ensure the text is visible */
+.events .section-title h2,
+.events .section-title .section-sub{
+  color: #fff !important;
+}
 
 
   </style>
+
