@@ -351,11 +351,17 @@
   box-shadow: 0 0 0 6px rgba(230,57,70,.18);
 }
 .leaders-section .leaders-badge{
-  margin-bottom: 30px; /* separates badge from heading */
+  margin-bottom: 30px;
 }
 
-    }
-    .leaders-hero h2{margin-top:14px;font-size:clamp(2.2rem,4.4vw,3.2rem);font-weight:950;letter-spacing:-0.03em;line-height:1.05;max-width:760px}
+.leaders-hero h2{
+  margin-top:14px;
+  font-size:clamp(2.2rem,4.4vw,3.2rem);
+  font-weight:950;
+  letter-spacing:-0.03em;
+  line-height:1.05;
+  max-width:760px;
+}
     .leaders-hero p{margin-top:14px;color:rgba(255,255,255,.80);max-width:620px;font-size:1.02rem}
     .leaders-actions{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
     @media(max-width:900px){.leaders-hero-inner{min-height:62vh;padding:64px 0}.leaders-actions .btn{width:100%}}
@@ -1078,41 +1084,5 @@ footer{ margin-top: 30px; }
 .sermon-play-inline {
   display: none !important;
 }
-/* EVENTS: remove the ugly white scrollbar track */
-.events-track{
-  scrollbar-color: rgba(255,255,255,.18) transparent; /* Firefox */
-  scrollbar-width: thin; /* Firefox */
-}
-
-.events-track::-webkit-scrollbar{
-  height: 6px;
-}
-
-.events-track::-webkit-scrollbar-track{
-  background: transparent;   /* this is the “white block” */
-}
-
-.events-track::-webkit-scrollbar-thumb{
-  background: rgba(255,255,255,.18);
-  border-radius: 999px;
-}
-.events-track{ scrollbar-width: none; }
-.events-track::-webkit-scrollbar{ display:none; }
-/* KILL the white block in Events header (Webflow-style override) */
-.events .section-title > div{
-  background: transparent !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  border: 0 !important;
-}
-
-/* Ensure the text is visible */
-.events .section-title h2,
-.events .section-title .section-sub{
-  color: #fff !important;
-}
-
 
   </style>
-
