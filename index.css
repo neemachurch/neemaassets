@@ -1153,8 +1153,28 @@ section.events .events-track,
 section.events .event-card{
   z-index: 1;
 }
+/* FIX: remove the mysterious white overlay in Events title area */
+.events .section-title,
+.events .section-title > div,
+.events .section-title > div > *{
+  background: transparent !important;
+}
+
+/* If it's coming from a pseudo element overlay */
+.events .container::before,
+.events .container::after,
+.events .section-title::before,
+.events .section-title::after{
+  content: none !important;
+}
+
+/* Ensure events content stays above any weird layer */
+.events .container{ position: relative; z-index: 1; }
+.events .section-title{ position: relative; z-index: 2; }
+.events .events-track{ position: relative; z-index: 2; }
 
   </style>
+
 
 
 
