@@ -1139,8 +1139,27 @@ section.events .container{
   max-width: 100% !important;
   background: transparent !important;
 }
+/* HARD FIX: remove any accidental white overlay inside Events */
+section.events,
+section.events .w-container,
+section.events .container,
+section.events .w-embed,
+section.events .w-embed * {
+  background: transparent !important;
+}
+
+/* If a child is positioned and sitting on top, force it behind */
+section.events *{
+  position: relative;
+  z-index: 0;
+}
+section.events .events-track,
+section.events .event-card{
+  z-index: 1;
+}
 
   </style>
+
 
 
 
