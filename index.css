@@ -1116,7 +1116,31 @@ section.events .container {
   max-width: 1200px !important;
   margin: 0 auto !important;
 }
+/* FIX: Webflow conflicts for Events section */
+section.events{
+  position: relative !important;
+  z-index: 1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+/* If Webflow wrapper is squeezing it */
+section.events .container{
+  width: 100% !important;
+  max-width: var(--container, 1200px) !important;
+  margin: 0 auto !important;
+}
+
+/* Remove any “white panel” feeling */
+.events-track{
+  width: 100% !important;
+  max-width: 100% !important;
+  background: transparent !important;
+}
 
   </style>
+
 
 
