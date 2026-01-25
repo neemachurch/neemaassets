@@ -588,18 +588,6 @@ section + section{
 .section-title{ margin-bottom: 54px; }
 @media(max-width:900px){ .section-title{ margin-bottom: 34px; } }
 
-/* Cards spacing (reduce "tight" feeling) */
-.event-card{ padding: 26px; }
-.mv-card{ padding: 24px; }
-.gi-item{ padding: 20px 22px; }
-.testimonial{ padding: 44px 40px; }
-@media(max-width:900px){
-  .event-card{ padding: 20px; }
-  .mv-card{ padding: 20px; }
-  .gi-item{ padding: 18px; }
-  .testimonial{ padding: 34px 22px; }
-}
-
 /* Events track breathe */
 .events-track{ gap: 26px; grid-auto-columns: 360px; padding-bottom: 18px; }
 @media(max-width:900px){ .events-track{ gap: 16px; grid-auto-columns: 88%; } }
@@ -814,87 +802,6 @@ footer{ margin-top: 30px; }
 }
 
 @keyframes blink { 50% { opacity: 0; } }
-
-/* Event "See details" small button */
-.event-actions{ margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
-.event-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding: 10px 12px;
-  border-radius: 999px;
-  font-weight: 950;
-  font-size: .78rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.06);
-  color: #fff;
-  cursor: pointer;
-  transition: transform .18s ease, background .18s ease, border-color .18s ease;
-}
-.event-btn:hover{
-  transform: translateY(-1px);
-  background: rgba(255,255,255,.10);
-  border-color: rgba(255,255,255,.20);
-}
-.event-btn.primary{
-  border: 1px solid rgba(230,57,70,.35);
-  background: rgba(230,57,70,.14);
-}
-.event-btn.primary:hover{
-  background: rgba(230,57,70,.22);
-}
-/* Event card layout so link can sit at bottom-right */
-.event-card{
-  display:flex;
-  flex-direction:column;
-  height:100%;
-}
-
-/* Push actions to bottom */
-.event-actions{
-  margin-top:auto;
-  display:flex;
-  justify-content:flex-end;
-  padding-top:14px;
-}
-
-/* Sleek text link */
-.event-link{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  font-weight:900;
-  font-size:.9rem;
-  color:rgba(255,255,255,.92);
-  opacity:.9;
-  transition:opacity .18s ease, transform .18s ease, color .18s ease;
-}
-
-/* small arrow (pure CSS, no giant svg) */
-.event-link::after{
-  content:"→";
-  font-weight:950;
-  opacity:.9;
-  transform:translateX(0);
-  transition:transform .18s ease, opacity .18s ease;
-}
-
-.event-link:hover{
-  opacity:1;
-  color:var(--accent);
-  transform:translateY(-1px);
-}
-.event-link:hover::after{
-  transform:translateX(3px);
-}
-/* Fix event tag width to fit text only */
-.event-tag{
-  display: inline-flex;   /* instead of block behavior */
-  width: fit-content;     /* shrink to text */
-  max-width: max-content; /* extra safety */
-}
 /* =========================
    LEADERSHIP: MOBILE ORDER + CLASSIC HEADING + BUTTON FIX
    Paste at END of CSS
@@ -1222,6 +1129,7 @@ html, body{
 
 
   </style>
+
 
 
 
