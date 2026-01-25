@@ -1102,6 +1102,21 @@ body *{
 body{
   overflow-x:hidden;
 }
+section.events {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: unset !important;
+  display: block !important;
+  overflow: visible !important;
+}
+
+section.events .container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
 
   </style>
+
 
