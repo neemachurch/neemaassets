@@ -1089,10 +1089,6 @@ html, body{
   color:#fff !important;
 }
 
-body *{
-  background-color: transparent;
-}
-
 /* common Webflow wrappers that often carry white */
 .wf-section, .section, .page-wrapper, .wrapper, .main, .container, .w-container, .w-section{
   background: transparent !important;
@@ -1159,6 +1155,7 @@ section.events .event-card{
 }
 
   </style>
+
 
 
 
