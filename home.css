@@ -1296,9 +1296,42 @@ nav.desktop{
 .hero-yearline span{
   padding: 10px 14px;
 }
+/* Center hero text and move it lower */
+.hero .container{
+  width: 100%;
+}
+
+.hero-content{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 860px;
+  padding-top: 40px;           /* pushes content down */
+}
+
+/* Center the kicker pill */
+.kicker{
+  margin: 0 auto;
+}
+
+/* Center the paragraph too */
+.hero p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center buttons */
+.hero-actions{
+  justify-content: center;
+}
+
+/* Center yearline too (since it's now under buttons) */
+.hero-yearline{
+  justify-content: center;
+}
 
 
   </style>
+
 
 
 
