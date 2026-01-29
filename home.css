@@ -1267,9 +1267,30 @@ html, body{
   }
   .ngc-event{ opacity: 1 !important; transform:none !important; }
 }
+/* HEADER LAYOUT FIX: logo hard-left, nav shifted right */
+.header-inner{
+  justify-content: flex-start !important;
+  gap: 28px !important;
+}
+
+.brand{
+  min-width: auto !important;
+  margin-right: 10px;
+}
+
+nav.desktop{
+  margin-left: 18px;            /* pushes nav slightly right */
+  flex: 1;                       /* fills space so actions stay far right */
+  justify-content: flex-start;
+}
+
+.header-actions{
+  margin-left: auto;             /* keeps icons on far right */
+}
 
 
   </style>
+
 
 
 
