@@ -1287,9 +1287,19 @@ nav.desktop{
 .header-actions{
   margin-left: auto;             /* keeps icons on far right */
 }
+.hero-yearline{
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-start;  /* aligns with buttons */
+}
+
+.hero-yearline span{
+  padding: 10px 14px;
+}
 
 
   </style>
+
 
 
 
