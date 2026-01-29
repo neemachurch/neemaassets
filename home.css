@@ -1313,9 +1313,25 @@ html, body{
   opacity: 1 !important;
   filter: none !important;
 }
+/* HARD FIX: something upstream is lowering opacity/filter */
+.hero-content{
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+.hero-content *{
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+.hero h1{ color:#fff !important; }
+.hero p{ color:rgba(255,255,255,.92) !important; }
 
 
   </style>
+
 
 
 
