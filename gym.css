@@ -1328,9 +1328,69 @@ html, body{
 
 .hero h1{ color:#fff !important; }
 .hero p{ color:rgba(255,255,255,.92) !important; }
+/* =========================
+   HERO MOBILE OPTIMIZATION
+========================= */
+
+@media (max-width: 768px){
+
+  .hero-content{
+    padding: 0 18px;
+    max-width: 100%;
+  }
+
+  .hero h1{
+    font-size: clamp(1.9rem, 7vw, 2.4rem);
+    line-height: 1.15;
+  }
+
+  .hero p{
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .kicker{
+    font-size: .8rem;
+    padding: 8px 12px;
+  }
+
+  .hero-actions{
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero .btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* First slide: keep centered but not too low */
+  .hero.first-slide .hero-content{
+    padding-top: 30vh;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 420px){
+  .hero.first-slide .hero-content{
+    padding-top: 26vh;
+  }
+}
+/* Better hero slide scaling on mobile */
+.hero-slide{
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px){
+  .hero-slide{
+    background-position: center top;
+  }
+}
 
 
   </style>
+
 
 
 
