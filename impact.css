@@ -1743,9 +1743,48 @@ img, video, svg, iframe { max-width:100%; height:auto; }
 .program-point strong{
   font-weight:700 !important;
 }
+/* ===== Uniform 16:9 Video Grid ===== */
+.video-grid.premium{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+@media(max-width:900px){
+  .video-grid.premium{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+  .video-grid.premium{grid-template-columns:1fr}
+}
+
+.video-card{
+  aspect-ratio:16/9;
+  border-radius:22px;
+  overflow:hidden;
+  background:#000;
+  position:relative;
+  box-shadow:0 22px 60px rgba(0,0,0,.45);
+}
+
+/* Kill any portrait / landscape overrides */
+.video-card.land,
+.video-card.portrait{
+  aspect-ratio:16/9;
+}
+.video-title{
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:14px;
+  font-size:.95rem;
+  line-height:1.35;
+  color:#fff;
+  z-index:2;
+  text-shadow:0 10px 28px rgba(0,0,0,.65);
+}
+
+
+
 
 </style>
 
-
-
-</style>
