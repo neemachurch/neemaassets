@@ -2247,8 +2247,26 @@ header .search-bar{
   opacity:1 !important;
   visibility:visible !important;
 }
+/* === SEARCH OVERLAY: FORCE WORKING (FINAL) === */
+.search-overlay{
+  pointer-events:auto !important;
+  z-index: 99999 !important;
+}
+.search-overlay *{
+  pointer-events:auto !important;
+}
+
+.search-overlay .search-bar{
+  display:flex !important;
+}
+.search-overlay input{
+  display:block !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
 
   </style>
+
 
 
 
