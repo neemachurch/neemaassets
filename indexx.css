@@ -2731,5 +2731,88 @@ nav.desktop a:hover,
     font-size: .92rem;
   }
 }
+/* =========================
+   HERO GLASS CARD — Worship Times
+========================= */
+.hero-times-card{
+  margin-top: 18px;
+  max-width: 640px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 22px;
+  padding: 16px 16px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 28px 80px rgba(0,0,0,.55);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-times-card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background: radial-gradient(520px 220px at 18% 10%, rgba(230,57,70,.24), transparent 60%);
+  pointer-events:none;
+}
+
+.hero-times-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.hero-times-badge{
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.28);
+  border: 1px solid rgba(255,255,255,.14);
+  font-weight: 950;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+.hero-times-note{
+  font-size: .9rem;
+  color: rgba(255,255,255,.72);
+  font-weight: 800;
+}
+
+.hero-times-grid{
+  display:grid;
+  gap: 10px;
+}
+
+.hero-times-item{
+  background: rgba(0,0,0,.22);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+
+.hero-times-day{
+  font-weight: 950;
+  margin-bottom: 6px;
+}
+
+.hero-times-time{
+  color: rgba(255,255,255,.82);
+  font-weight: 850;
+  font-size: .98rem;
+}
+
+@media (max-width: 900px){
+  .hero-times-card{
+    max-width: 100%;
+    padding: 14px;
+  }
+  .hero-times-top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
   </style>
